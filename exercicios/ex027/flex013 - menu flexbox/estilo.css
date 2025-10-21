@@ -13,24 +13,36 @@ body {
 header {
   background-color: gray;
   padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 header h1 {
   color: white;
   border: 1px dotted black;
+  flex: 0 0 200px;
 }
 header nav {
-    border: 1px dotted black;
+  border: 1px dotted black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
 }
 header > nav > a {
   color: white;
   text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
   background-color: black;
-  border-radius: 10px;
+  border-radius: 5px;
 }
-a:hover {
+header > nav > a:hover {
   background-color: white;
   color: black;
-  transition: ease-in 0.2s;
+  transition: background-color 0.5s;
 }
 main {
   margin: 10px;
@@ -39,4 +51,3 @@ main {
   border-radius: 10px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.336);
 }
-
